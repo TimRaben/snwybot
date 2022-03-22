@@ -77,11 +77,11 @@ client.on("messageCreate", async message => {
                 return !values.includes(option.value)
             });
 
-            for(var id of removed){
+            for(var id of removed) {
                 member.roles.remove(id.value)
             }
 
-            for(var id of removed){
+            for(var id of values) {
                 member.roles.add(id)
             }
 
