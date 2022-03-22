@@ -1,4 +1,4 @@
-const { Client, Intents, Collection } = require("discord.js");
+const { Client, Intents, Collection, Interaction } = require("discord.js");
 const botConfig = require("./botConfig.json");
 const fs = require("fs");
 
@@ -60,6 +60,38 @@ client.on("messageCreate", async message => {
         console.log(error);
         await message.reply("Foutcode: **1**\n\nStuur een Developer een bericht en geef de foutcode door.")
     }
+
+    client.on("interactionCreate", interaction => {
+
+        if(!interaction.isSelectMenu()) {
+            return;
+        }
+
+        const { customId, values, member } = interaction;
+
+        if(customId === 'roles') {
+
+            const component = interaction.component;
+
+            const removed = component.options.filter((option) => {
+                return !values.includes(option.value)
+            });
+
+            for(var id of removed){
+                member.roles.remove(id.value)
+            }
+
+            for(var id of removed){
+                member.roles.add(id.value)
+            }
+
+            interaction.reply({
+                content: ":white_check_mark: **||** Rol toegevoegd!",
+                ephemeral: true
+            });
+        }
+
+    })
 
 
 });
