@@ -42,7 +42,7 @@ module.exports.run = async (client, message, args) => {
         new discord.MessageSelectMenu()
             .setCustomId("roles")
             .setMinValues(0)
-            .setMaxValues(7)
+            .setMaxValues(8)
             .setPlaceholder("Selecteer een Rol...")
             .addOptions(options)
     );
