@@ -5,31 +5,31 @@ module.exports.run = async (client, message, args) => {
     const options = [
         {
             label: "TikTok Ping",
-            value: "846020487732658236",
+            value: "846020487732658236"
         },
         {
             label: "Updates Ping",
-            value: "846020487732658236",
+            value: "846020487732658236"
         },
         {
             label: "Mededelingen Ping",
-            value: "846020487732658236",
+            value: "846020487732658236"
         },
         {
             label: "Poll Ping",
-            value: "846020487732658236",
+            value: "846020487732658236"
         },
         {
             label: "Youtube Ping",
-            value: "846020487732658236",
+            value: "846020487732658236"
         },
         {
             label: "Instagram Ping",
-            value: "846020487732658236",
+            value: "846020487732658236"
         },
         {
             label: "Sollicitaties Ping",
-            value: "846020487732658236",
+            value: "846020487732658236"
         }
     ];
 
