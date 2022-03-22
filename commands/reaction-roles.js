@@ -9,27 +9,31 @@ module.exports.run = async (client, message, args) => {
         },
         {
             label: "Updates Ping",
-            value: "846020487732658236"
+            value: "846020697209831434"
         },
         {
             label: "Mededelingen Ping",
-            value: "846020487732658236"
+            value: "945245835766145044"
         },
         {
             label: "Poll Ping",
-            value: "846020487732658236"
+            value: "887718264963235850"
         },
         {
             label: "Youtube Ping",
-            value: "846020487732658236"
+            value: "896423576876486657"
         },
         {
             label: "Instagram Ping",
-            value: "846020487732658236"
+            value: "945243141815042068"
         },
         {
             label: "Sollicitaties Ping",
-            value: "846020487732658236"
+            value: "945245734284976168"
+        },
+        {
+            label: "Giveaways Ping",
+            value: "896425147270041612"
         }
     ];
 
