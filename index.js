@@ -63,13 +63,13 @@ client.on("messageCreate", async message => {
 
     client.on("interactionCreate", interaction => {
 
-        if(!interaction.isSelectMenu()) {
+        if (!interaction.isSelectMenu()) {
             return;
         }
 
         const { customId, values, member } = interaction;
 
-        if(customId === 'roles') {
+        if (customId === 'roles') {
 
             const component = interaction.component;
 
