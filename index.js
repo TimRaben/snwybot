@@ -86,7 +86,7 @@ client.on("messageCreate", async message => {
             }
 
             interaction.reply({
-                content: ":white_check_mark: **||** Rol toegevoegd!",
+                content: ":white_check_mark: **||** Rol geupdate!",
                 ephemeral: true
             });
         }
