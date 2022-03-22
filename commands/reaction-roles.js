@@ -5,7 +5,9 @@ module.exports.run = async (client, message, args) => {
     const options = [
         {
             label: "TikTok Ping",
-            value: "846020487732658236"
+            value: "846020487732658236",
+            emoji: "📌",
+            description: "selecteer deze rol om taggs te krijgen van dit onderwerp."
         },
         {
             label: "Updates Ping",
