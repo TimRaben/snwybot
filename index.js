@@ -82,7 +82,7 @@ client.on("messageCreate", async message => {
             }
 
             for(var id of removed){
-                member.roles.add(id.value)
+                member.roles.add(id)
             }
 
             interaction.reply({
