@@ -24,8 +24,8 @@ client.once("ready", () => {
 
     setInterval(() => {
         const statuses = [
-            `Ontwikkelingen...`,
-            `Downtime`,
+            `💻 @.tech_snwy`,
+            `🌎 Leden`,
         ]
     
         const status = statuses[Math.floor(Math.random() * statuses.length)]
