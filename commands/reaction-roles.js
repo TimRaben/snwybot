@@ -65,7 +65,7 @@ module.exports.run = async (client, message, args) => {
 
 
 
-    return message.channel.send({content: `**Reaction Roles**\n\nSelecteer/klik hieronder via dit menu aan van welke onderwerpen jij op de hoogte gehouden wilt worden, je kan het daarna vervolgens ook weer verwijderen indien je geen taggs meer wilt ontvangen van dat onderwerp.\n\n${args(0)}`, components: [row]});
+    return message.channel.send({content: `**Reaction Roles**\n\nSelecteer/klik hieronder via dit menu aan van welke onderwerpen jij op de hoogte gehouden wilt worden, je kan het daarna vervolgens ook weer verwijderen indien je geen taggs meer wilt ontvangen van dat onderwerp.\n\n<@&845683067850194984>`, components: [row]});
 
 }
 
