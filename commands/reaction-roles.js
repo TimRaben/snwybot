@@ -63,7 +63,9 @@ module.exports.run = async (client, message, args) => {
             .addOptions(options)
     );
 
-    return message.channel.send({content: "**Reaction Roles**\n\nSelecteer hieronder doormiddel van het menu de onderwerpen waar jij graag op de hoogte van wilt blijven!\n ", components: [row]});
+
+
+    return message.channel.send({content: `**Reaction Roles**\n\nSelecteer hieronder doormiddel van het menu de onderwerpen waar jij graag op de hoogte van wilt blijven!\n\n${args(0)}`, components: [row]});
 
 }
 
