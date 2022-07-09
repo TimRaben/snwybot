@@ -2,12 +2,10 @@ const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
 
-        const Member = message.member
-        if(!Member) return message.channel.send('⛔ **|** Persoon niet gevonden!')
+    let role = message.guild.roles.chache.some(roles => role.name === 'Nanoleaf')
+    message.member.role.add(role)
     
-        let role2 = message.guild.roles.cache.find(r => r.name.toLowerCase() === '995245864903782460995245864903782460')
-        await Member.roles.add(role2)
-        message.channel.send(`${Member.displayName} heeft succesvol de NanoLeaf XP actie geclaimed!`)
+    message.channel.send(`${Member.displayName} heeft succesvol de NanoLeaf XP actie geclaimed!`)
     }
 
 module.exports.help = {
