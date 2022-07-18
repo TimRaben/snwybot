@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
 
     if (!unbanUser) return message.reply(":x: **||** Geef een geldig persoon op.") && message.delete();
 
-        var args = args.join(" ");
+        var args = args[0];
 
         if (args === "500") {
 
