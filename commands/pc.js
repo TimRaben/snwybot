@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
 
                 var antwoordGoed = new discord.MessageEmbed()
                     .setTitle("test")
-                    .setColor("test")
+                    .setColor("GREEN")
                     .setField("test", "test");
 
                 message.channel.send(antwoordGoed);
